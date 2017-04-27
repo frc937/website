@@ -1,0 +1,111 @@
+$text-color: #533
+$secondary-text-color: #fff
+$link-color: #caba0b1
+$background-fallback: url('https://static.red2fred2.com/scouting/images/background.jpg') no-repeat
+
+body 
+  font-family: Helvetica-Neue,Helvetica,sans-serif
+  margin: 0px
+
+.background
+    position: fixed
+    top: 50%
+    left: 50%
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+    z-index: -100
+    -ms-transform: translateX(-50%) translateY(-50%)
+    -moz-transform: translateX(-50%) translateY(-50%)
+    -webkit-transform: translateX(-50%) translateY(-50%)
+    transform: translateX(-50%) translateY(-50%)
+    background: $background-fallback
+    background-size: cover
+
+#video-cover
+  position: fixed
+  top: 50%
+  left: 50%
+  min-width: 100%
+  min-height: 100%
+  width: auto
+  height: auto
+  z-index: -99
+  -ms-transform: translateX(-50%) translateY(-50%)
+  -moz-transform: translateX(-50%) translateY(-50%)
+  -webkit-transform: translateX(-50%) translateY(-50%)
+  transform: translateX(-50%) translateY(-50%)
+  background-color: #000
+  opacity: 0.5
+  background-size: cover
+
+.navbar
+  border-radius: 0px
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 1000
+  
+title
+  text-transform: capitalize
+
+a
+  color: $link-color
+
+.centered
+  position: relative
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+
+.container
+  margin-right: auto
+  margin-left: auto
+
+.vertical-center
+  min-height: 100vh
+  display: flex
+  align-items: center
+
+header
+  height: 100vh
+  padding: 35vh 0
+  max-width: 100vw
+
+.headercontainer
+  position: relative
+  height: 30vh
+  width: 89vw
+  
+.headercontainer h1
+  height: 30vh
+  font-size: 16vmin
+  color: #fff
+  text-transform: uppercase
+  margin: 0
+
+.headercontainer h3
+  position: relative
+  font-size: 8vh
+  bottom: 50%
+  color: #fff
+  border-color: #fff
+  font-size: 8vmin
+
+.boxed
+  padding: 10px
+  border: 2px solid
+  text-transform: uppercase
+  margin: 0 auto
+
+section
+  background-color: #fff
+  padding: 20vh 0
+  color: $text-color
+  border-color: $text-color
+  text-align: center
+
+footer
+  height: 20vh
+  color: $secondary-text-color

@@ -1,0 +1,26 @@
+-
+  const page={
+    title:'Team',
+    subtitle:'937',
+    author:'Dylan Polson',
+    navbar:{
+      links:[
+        {text:'red2fred2',url:'https://red2fred2.com'},
+        {text:'Team 937',url:'https://937.red2fred2.com'}
+      ]
+    }
+   }
+//- -------------------------------------------------------------------------------------------------------------------------------------- -//
+doctype html
+html
+  head
+    include ../templates/head.pug
+    title #{page.title}
+  body
+    #video-cover
+    video.background(playsinline='',autoplay='',muted='',loop='',src='https://static.red2fred2.com/scouting/video/background.mp4',poster='https://static.red2fred2.com/scouting/images/background.jpg')
+    include ../templates/navbar.pug
+    include ../templates/header.pug
+    section
+    include ../templates/footer.pug
+    script(src='script.js')
