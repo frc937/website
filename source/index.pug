@@ -1,12 +1,12 @@
 -
   const page={
-    title:'Team',
-    subtitle:'937',
+    title:'FRC Team 937',
+    subtitle:'The Robotribe',
     author:'Dylan Polson',
     navbar:{
       links:[
         {text:'red2fred2',url:'https://red2fred2.com'},
-        {text:'Team 937',url:'https://937.red2fred2.com'}
+        {text:'Scouting',url:'https://scouting.937.red2fred2.com'}
       ]
     }
    }
@@ -22,5 +22,14 @@ html
     include ../templates/navbar.pug
     include ../templates/header.pug
     section
+      h1.centered The team
+      hr.centered
+      .contatiner.centered
+        .col-lg-4#dylan
+          h4 asdf
+        .col-lg-4#jack
+          h4 asdf
+        .col-lg-4#tyler
+          h4 asdf
     include ../templates/footer.pug
     script(src='script.js')
